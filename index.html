@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="static/css/bootstrap.css" rel="stylesheet" />
+    <link href="static/css/style.css" rel="stylesheet" />
+
+    <title>BusDash - Stop #56</title>
+
+    <script src="static/js/jquery-2.2.4.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/angular.min.js"></script>
+    <script src="static/js/angular-ui-router.min.js"></script>
+</head>
+<body ng-app="BusDash" ng-cloak>
+    
+    <div class="container">
+                    
+        <h1>Bus Dash</h1>
+        <h3>a proper Bus Eireann timetable</h3>
+        
+        <ul class="nav nav-tabs">
+          <li role="presentation"><a ui-sref="home" ui-sref-active="active">Home</a></li>
+          <li role="presentation"><a ui-sref="about" ui-sref-active="active">About</a></li>
+          <li role="presentation"><a ui-sref="share" ui-sref-active="active">Share</a></li>
+        </ul>
+        
+           <div class="row content">
+               <ui-view></ui-view>
+           </div>
+
+           
+
+
+        
+        
+        <footer>
+            <p>&copy; Darren Meehan 2016</p>
+        </footer>
+    </div>
+
+    
+    <script src="app.js"></script>
+    
+    
+</body>
+</html>
